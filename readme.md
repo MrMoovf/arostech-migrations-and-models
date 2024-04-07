@@ -1,6 +1,6 @@
 # How to use
 
-## execute these lines of code in the terminal:
+## Execute these lines of code in the terminal
 
 composer require arostech/migrations-and-models:dev-main
 
