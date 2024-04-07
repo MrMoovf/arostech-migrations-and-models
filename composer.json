@@ -4,7 +4,8 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Arostech\\Migrations\\": "src/"
+            "Arostech\\Migrations\\": "src/",
+            "Arostech\\Models\\":"src/Models/"
         }
     },
     "authors": [
