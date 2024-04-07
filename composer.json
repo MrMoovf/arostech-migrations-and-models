@@ -1,0 +1,24 @@
+{
+    "name": "arostech/migrations-and-models",
+    "description": "Migrations and Models for the Aros Tech CMS",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Arostech\\MigrationsAndModels\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anders K"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arostech\\Migrations\\MigrationsServiceProvider"
+            ]
+            
+        }
+    }
+}
