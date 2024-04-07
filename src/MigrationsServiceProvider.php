@@ -4,7 +4,7 @@ namespace Arostech\Migrations;
 
 use Illuminate\Support\ServiceProvider;
 
-class MigrationServiceProvider extends ServiceProvider {
+class MigrationsServiceProvider extends ServiceProvider {
     
     /**
      * Bootstrap any package services.
