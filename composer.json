@@ -13,6 +13,7 @@
             "name": "Anders K"
         }
     ],
+    "license": "proprietary",
     "require": {},
     "extra": {
         "laravel": {
