@@ -14,7 +14,9 @@ class MigrationsServiceProvider extends ServiceProvider {
         $this->publishes([
             __DIR__.'/database/migrations' => database_path('migrations'),
         ],'migrations');
-        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+
+        // Enables migrations to be loaded automatically. I am a bit afraid of this even though it os convient
+        // $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
     }
 }
 
