@@ -25,6 +25,7 @@ return new class extends Migration
             $table->unsignedBigInteger('featured_image_id')->nullable();
             $table->string('slug');
             $table->date('published_at');
+            $table->softDeletes();
             $table->timestamps();
 
             $table->foreign('user_id')
