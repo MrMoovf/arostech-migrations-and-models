@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->string('author');
+            $table->string('author')->nullable();
             $table->string('title');
-            $table->string('subtitle');
-            $table->string('summary');  // sættes til de første 100 chars af content hvis ikke den er defineret
+            $table->string('subtitle')->nullable();
+            $table->string('summary')->nullable();  // sættes til de første 100 chars af content hvis ikke den er defineret
             $table->text('content');
-            $table->string('alt_field1');
+            $table->string('alt_field1')->nullable();
             $table->json('metadata')->nullable();
             $table->unsignedBigInteger('view_count')->default(0);
             $table->unsignedBigInteger('featured_image_id')->nullable();
