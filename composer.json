@@ -14,7 +14,9 @@
         }
     ],
     "license": "proprietary",
-    "require": {},
+    "require": {
+        "staudenmeir/laravel-adjacency-list": "^1.22"
+    },
     "extra": {
         "laravel": {
             "providers": [
