@@ -31,7 +31,7 @@ class Post extends Model
         return $this->belongsToMany(Category::class);
     }
 
-    // public function image():HasOne{
-    //     return $this->hasOne(Image::class,'id','featured_image_id');
-    // }
+    public function featuredimage():HasOne{
+        return $this->hasOne(Image::class,'id','featured_image_id');
+    }
 }
