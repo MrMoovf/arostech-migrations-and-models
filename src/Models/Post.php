@@ -24,14 +24,14 @@ class Post extends Model
         'view_count',
         'featured_image_id',
         'slug',
-        'published_at'
+        'published_at' 
     ];
 
     public function categories(): BelongsToMany {
         return $this->belongsToMany(Category::class);
     }
 
-    public function image():HasOne{
-        return $this->hasOne(Image::class,'id','featured_image_id');
-    }
+    // public function image():HasOne{
+    //     return $this->hasOne(Image::class,'id','featured_image_id');
+    // }
 }
