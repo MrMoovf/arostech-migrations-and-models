@@ -12,6 +12,7 @@ class Category extends Model
     use HasFactory, HasRecursiveRelationships;
     protected $fillable = [
         'name',
+        'hexcolor',
         'parent_id'
     ];
 
