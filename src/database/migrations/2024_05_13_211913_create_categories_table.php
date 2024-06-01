@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('hexcolor');
+            $table->string('hexcolor')->default('#000000');
             $table->unsignedBigInteger('parent_id')->nullable();
             $table->timestamps();
 
