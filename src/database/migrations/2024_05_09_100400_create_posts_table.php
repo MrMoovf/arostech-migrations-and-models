@@ -24,7 +24,7 @@ return new class extends Migration
             $table->unsignedBigInteger('view_count')->default(0);
             $table->unsignedBigInteger('featured_image_id')->nullable();
             $table->string('slug');
-            $table->date('published_at');
+            $table->timestamp('published_at')->nullable();
             $table->softDeletes();
             $table->timestamps();
 
