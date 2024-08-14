@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Arostech\Models;
 
 use Arostech\Models\Category;
 use Arostech\Models\Content;
@@ -15,7 +15,7 @@ class Page extends Model
     use HasFactory;
 
 
-    public function content():HasMany {
+    public function contents():HasMany {
         return $this->hasMany(Content::class);
     }
 

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('content_page', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('page_id');
-            $table->unsignedBigInteger('contents_id');
+            $table->unsignedBigInteger('content_id');
             $table->timestamps();
 
             $table->foreign('page_id')
@@ -22,7 +22,7 @@ return new class extends Migration
             ->on('pages')
             ->onDelete('cascade');
 
-            $table->foreign('contents_id')
+            $table->foreign('content_id')
             ->references('id')
             ->on('contents')
             ->onDelete('cascade');
