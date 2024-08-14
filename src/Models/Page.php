@@ -8,6 +8,8 @@ use Arostech\Models\Image;
 use Arostech\Models\Post;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Page extends Model
@@ -19,19 +21,19 @@ class Page extends Model
     ];
 
 
-    public function contents():HasMany {
-        return $this->hasMany(Content::class);
+    public function contents():BelongsToMany {
+        return $this->belongsToMany(Content::class);
     }
 
-    public function images():HasMany {
-        return $this->hasMany(Image::class);
+    public function images():BelongsToMany {
+        return $this->belongsToMany(Image::class);
     }
 
-    public function categories():HasMany {
-        return $this->hasMany(Category::class);
+    public function categories():BelongsToMany {
+        return $this->belongsToMany(Category::class);
     }
 
-    public function posts(): HasMany {
-        return $this->hasMany(Post::class);
+    public function posts(): BelongsToMany {
+        return $this->belongsToMany(Post::class);
     }
 }
